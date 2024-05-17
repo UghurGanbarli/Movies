@@ -80,6 +80,7 @@ nav div#search input#s2{
     background-color: var(--bgc--black);
     outline: none;
     border: none;
+    color: var(--bgc--white);
 }
 nav div.btn{
     width: calc(1em + 15vw);
@@ -157,6 +158,23 @@ nav div.menu ul li a{
     display: none;
 }
 
+.hover{
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* Diğer içeriklerin önünde olması için */
+}
+
+
+
 @media screen and (max-width: 1024px) {
     section{
         width: 95%;
@@ -192,7 +210,9 @@ nav div.menu ul li a{
         margin-right: 20px;
     }
 }
-
+img:hover .hover{
+    height: 290px;
+}
 
 @media screen and (max-width:768px) {
     .row {
