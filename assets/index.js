@@ -120,6 +120,7 @@ let tPage = async (i,arr1) => {
 							'height': '200px',
 							'transition': 'height 0.5s'
 						});
+						$('nav .menu').css('display', 'none');
 						hover.textContent = arr1[i].overview;
 		
 						// Diğer hover efekti kodları...
@@ -129,6 +130,8 @@ let tPage = async (i,arr1) => {
 							'height': '0',
 							'transition': 'height 0.5s'
 						});
+						$('nav .menu').css('display', 'block');
+
 						hover.textContent = '';
 		
 						// Diğer hover efekti kodları...
@@ -145,6 +148,7 @@ let tPage = async (i,arr1) => {
 					'opacity': '0',
 					'transition': 'all 0.5s'
 				});
+				$('nav .menu').css('display', 'none');
 				hover.textContent = arr1[i].overview;
 				
 				let body1 = document.querySelector('#body1');
@@ -166,6 +170,8 @@ let tPage = async (i,arr1) => {
 					'opacity': '1',
 					'transition': 'all 0.5s'
 				});
+				$('nav .menu').css('display', 'block');
+
 			}
 		);
 		
